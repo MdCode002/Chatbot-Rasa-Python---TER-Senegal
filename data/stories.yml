@@ -1,0 +1,77 @@
+version: "3.1"
+
+stories:
+  - story: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Say goodbye to user
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: fournir_lieux
+        entities:
+          - lieu: Liberté 3
+      - slot_was_set:
+          - lieu: Liberté 3
+      - action: lieu_form
+      - active_loop: lieu_form
+      - slot_was_set:
+          - lieu: Liberté 3
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: action_provide_nearest_station_by_lieu
+
+  - story: interactive_story_1
+    steps:
+      - intent: fournir_localisation
+        entities:
+          - location: 14.742385,-17.452371
+      - slot_was_set:
+          - location: 14.742385,-17.452371
+
+  - story: interactive_story_2
+    steps:
+      - intent: train_horaire_lieuDepart_lieuArrive
+        entities:
+          - departure_station: Dakar
+          - arrival_station: Diamniadio
+      - slot_was_set:
+          - departure_station: Dakar
+      - slot_was_set:
+          - arrival_station: Diamniadio
+      - action: utter_demande_horaire
+      - intent: train_horaire_heure
+        entities:
+          - heure: 9h
+      - slot_was_set:
+          - heure: 9h
+      - action: action_provide_train_schedule
+
+  - story: interactive_story_3
+    steps:
+      - intent: next_train_horaire
+        entities:
+          - next_train_gare: colobane
+      - slot_was_set:
+          - next_train_gare: colobane
+      - action: action_next_train
+
+  - story: interactive_story_2
+    steps:
+      - intent: tarif_entre_gare
+        entities:
+          - Ticket_depart: colobane
+          - Ticket_arrive: diamniadio
+      - slot_was_set:
+          - Ticket_depart: colobane
+      - slot_was_set:
+          - Ticket_arrive: diamniadio
+      - action: action_tarif_entre_gare

@@ -1,0 +1,166 @@
+version: '3.1'
+intents:
+- Merci
+- ask_description
+- ask_nearest_station
+- current_time
+- fournir_lieux
+- fournir_localisation
+- goodbye
+- greet
+- next_train_horaire
+- nlu_fallback
+- random
+- tarif_entre_gare
+- time
+- train_horaire_heure
+- train_horaire_lieuDepart_lieuArrive
+entities:
+- Ticket_depart
+- lieu
+- Ticket_arrive
+- next_train_gare
+- heure
+- departure_station
+- arrival_station
+- location
+- destination
+- time
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: location
+      condition:
+      - actvie_loop: simple_form
+  next_train_gare:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: next_train_gare
+  departure_station:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: departure_station
+      condition:
+      - actvie_loop: horaire_form
+  arrival_station:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: arrival_station
+      condition:
+      - actvie_loop: horaire_form
+  heure:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: heure
+      condition:
+      - actvie_loop: horaire_heure_form
+  lieu:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: lieu
+      condition:
+      - actvie_loop: lieu_form
+  destination:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: destination
+  Ticket_depart:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: Ticket_depart
+  Ticket_arrive:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: Ticket_arrive
+responses:
+  utter_greet:
+  - text: Bonjour! Comment puis-je vous aider aujourd'hui ?
+  - text: Salut! Que puis-je faire pour vous aujourd'hui ?
+  - text: Bonjour! En quoi puis-je vous être utile ?
+  - text: Hello! Comment puis-je vous assister aujourd'hui ?
+  - text: Bienvenue! Que puis-je faire pour vous ?
+  utter_goodbye:
+  - text: Au revoir! Passez une bonne journée !
+  - text: À bientôt ! Bonne journée !
+  - text: Adieu! Que votre journée soit agréable !
+  - text: Au plaisir de vous revoir ! Bonne journée !
+  - text: À la prochaine ! Passez une excellente journée !
+  utter_ask_location:
+  - text: Pouvez-vous me dire votre emplacement actuel ?
+  - text: Pourriez-vous indiquer où vous êtes actuellement ?
+  - text: Où êtes-vous en ce moment ?
+  - text: Quel est votre lieu actuel ?
+  utter_ask_destination:
+  - text: Quelle est votre destination ?
+  - text: Où souhaitez-vous aller ?
+  - text: Vers quel endroit vous dirigez-vous ?
+  - text: Quel est votre point de destination ?
+  utter_description:
+  - text: Ter IA est votre assistant virtuel pour vous aider avec les horaires, les gares et les billets du TER Sénégal.
+  - text: Bienvenue sur Ter IA, votre assistant pour les informations sur les horaires et les gares du TER Sénégal.
+  - text: Ter IA est là pour vous fournir toutes les informations dont vous avez besoin sur les horaires et les billets du TER Sénégal.
+  - text: Bienvenue sur Ter IA, votre assistant pour les horaires et les gares du TER Sénégal.
+  utter_demande_horaire:
+  - text: Pour quelle heure souhaitez-vous connaître les horaires entre ces deux lieux ?
+  - text: À quelle heure voulez-vous connaître les horaires entre ces deux destinations ?
+  - text: Quand aimeriez-vous connaître les horaires entre ces deux points ?
+  - text: À quel moment souhaitez-vous obtenir les horaires entre ces deux endroits ?
+  utter_remerciment:
+  - text: Je vous en prie, je suis là pour vous aider.
+  - text: De rien, c'est un plaisir de vous aider.
+  - text: Il n'y a pas de quoi, je suis là pour ça.
+  - text: Avec plaisir, n'hésitez pas si vous avez d'autres questions.
+  - text: Je suis content d'avoir pu vous aider.
+  utter_default:
+  - text: Désolé, je n'ai pas compris. Pouvez-vous reformuler votre question ?
+  - text: Excusez-moi, je n'ai pas saisi. Pouvez-vous préciser votre demande ?
+  - text: Pardon, je n'ai pas compris. Pourriez-vous expliquer davantage ?
+  - text: Mes excuses, je ne suis pas sûr de comprendre. Pourriez-vous clarifier ?
+  utter_quelle_heure:
+  - text: il est quelle heure
+actions:
+- action_provide_nearest_station_by_lieu
+- utter_greet
+- action_tarif_entre_gare
+- action_fallback
+- action_next_train
+- utter_default
+- utter_demande_horaire
+- action_provide_train_schedule
+- action_provide_nearest_station
+forms:
+  simple_form:
+    required_slots:
+    - location
+  lieu_form:
+    required_slots:
+    - lieu
+  horaire_lieu_form:
+    required_slots:
+    - departure_station
+    - arrival_station
+  horaire_heure_form:
+    required_slots:
+    - heure
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

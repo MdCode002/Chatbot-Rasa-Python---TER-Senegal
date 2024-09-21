@@ -1,0 +1,38 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_goodbye];
+"-4" [class=ellipsis, label="..."];
+"-5" [class=ellipsis, label="..."];
+4 [class="", fontsize=12, label=utter_demande_horaire];
+"-6" [class=ellipsis, label="..."];
+5 [class="", fontsize=12, label=action_next_train];
+"-7" [class=ellipsis, label="..."];
+6 [class=active, fontsize=12, label=action_tarif_entre_gare];
+7 [class="intent dashed active", label="  ?  ", shape=rect];
+8 [class=intent, fillcolor=lightblue, label="/greet", shape=rect, style=filled];
+9 [class=intent, fillcolor=lightblue, label="/goodbye", shape=rect, style=filled];
+10 [class=intent, fillcolor=lightblue, label="/fournir_localisation", shape=rect, style=filled];
+11 [class=intent, fillcolor=lightblue, label="/train_horaire_lieuDepart_lieuArrive", shape=rect, style=filled];
+12 [class=intent, fillcolor=lightblue, label="/next_train_horaire", shape=rect, style=filled];
+13 [class="intent active", fillcolor=lightblue, label="/tarif_entre_gare", shape=rect, style=filled];
+0 -> "-1"  [class="", key=NONE, label=""];
+0 -> 8  [class="", key=0];
+0 -> 9  [class="", key=0];
+0 -> 10  [class="", key=0];
+0 -> 11  [class="", key=0];
+0 -> 12  [class="", key=0];
+0 -> 13  [class=active, key=0];
+1 -> "-5"  [class="", key=NONE, label=""];
+2 -> "-4"  [class="", key=NONE, label=""];
+4 -> "-6"  [class="", key=NONE, label=""];
+5 -> "-7"  [class="", key=NONE, label=""];
+6 -> 7  [class=active, key=NONE, label=""];
+8 -> 1  [class="", key=0];
+9 -> 2  [class="", key=0];
+10 -> "-1"  [class="", key=0];
+11 -> 4  [class="", key=0];
+12 -> 5  [class="", key=0];
+13 -> 6  [class=active, key=0];
+}

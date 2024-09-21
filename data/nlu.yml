@@ -1,0 +1,1249 @@
+version: "3.1"
+nlu:
+- intent: random
+  examples: |
+    - fghj
+    - 1 + 1
+    - gdhjkmuigy
+    - pihgyutdresdfcgv
+    - hhhgfdghjkkhh
+    - hhhhhhhhhhh
+    - tu comprend wolof
+    - sdfghjkgfd
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Hello
+    - Coucou
+    - salut
+    - Bonjour, comment ça va ?
+    - Bonsoir
+    - Salut tout le monde
+    - Hey
+    - Salut à tous
+    - Salut !
+    - Salut, ça va ?
+    - Yo
+    - Bonjour à tous
+    - Hello there
+    - Salut tout le monde, ça va ?
+    - Bonjour, vous allez bien ?
+    - Salut, quoi de neuf ?
+    - Bon matin
+    - Bonjour, comment allez-vous ?
+    - Coucou tout le monde
+    - Bonjour, ça va ?
+    - Salut, ça roule ?
+    - Salut, comment ça va ?
+    - Hello, comment ça va ?
+    - Bonjour, quoi de neuf ?
+- intent: goodbye
+  examples: |
+    - Au revoir
+    - A plus tard
+    - Bye
+    - A bientôt
+    - Au revoir tout le monde
+    - Salut, à plus
+    - À la prochaine
+    - Bonne journée
+    - Ciao
+    - Adieu
+    - À plus
+    - À tout à l'heure
+    - Je dois y aller
+    - J'y vais
+    - À plus tard tout le monde
+    - Bye bye
+    - Au plaisir
+    - Portez-vous bien
+    - À la prochaine fois
+    - À bientôt tout le monde
+    - Bonne soirée
+    - À plus tard
+    - Prenez soin de vous
+    - À plus tard !
+    - À plus tard, tout le monde !
+    - À plus tard, bonne journée
+    - Salut, à plus tard !
+    - À tout de suite
+    - À tout à l'heure !
+    - À tout à l'heure, tout le monde !
+    - Au revoir, à bientôt
+    - Au revoir et à bientôt
+    - Au revoir, bonne journée
+    - Au revoir tout le monde, à bientôt
+    - À la prochaine !
+    - À la prochaine fois, tout le monde !
+    - À bientôt, bonne journée
+    - À plus, bonne journée
+    - Ciao !
+    - Ciao, à plus tard
+    - Ciao, à la prochaine
+    - Ciao, tout le monde !
+    - À tout de suite !
+    - À tout de suite, tout le monde !
+    - À bientôt, tout le monde
+    - À bientôt, bonne soirée
+    - À plus tard, bonne soirée
+    - À plus tard, tout le monde
+    - À plus tard, bonne soirée tout le monde
+    - Prenez soin de vous, au revoir
+    - Portez-vous bien, au revoir
+    - Bonne soirée à tous
+    - Bonne soirée tout le monde
+    - Bonne journée tout le monde
+    - Adieu !
+    - À bientôt, portez-vous bien
+    - À bientôt, prenez soin de vous
+    - À la prochaine fois, portez-vous bien
+    - À plus tard, portez-vous bien
+    - À plus tard, prenez soin de vous
+    - À bientôt, tout le monde, portez-vous bien
+    - À bientôt, tout le monde, prenez soin de vous
+    - Salut, portez-vous bien
+    - Salut, prenez soin de vous
+    - À la prochaine fois, bonne journée
+    - À bientôt, bonne journée, portez-vous bien
+    - À plus tard, bonne journée, portez-vous bien
+    - Au plaisir, au revoir
+    - Au plaisir, portez-vous bien
+    - Au plaisir, prenez soin de vous
+    - Bonne soirée, au revoir
+    - Bonne soirée, portez-vous bien
+    - Bonne soirée, prenez soin de vous
+    - Bonne journée, portez-vous bien
+    - Bonne journée, prenez soin de vous
+    - Portez-vous bien, bonne journée
+    - Portez-vous bien, bonne soirée
+    - Portez-vous bien, bonne journée, au revoir
+    - Prenez soin de vous, bonne journée
+    - Prenez soin de vous, bonne soirée
+    - À plus, portez-vous bien
+    - À plus, prenez soin de vous
+    - À bientôt, au plaisir
+    - À la prochaine, portez-vous bien
+    - À la prochaine, prenez soin de vous
+    - À bientôt, bonne journée, au revoir
+    - À bientôt, bonne soirée, au revoir
+    - Au revoir, portez-vous bien
+    - Au revoir, prenez soin de vous
+    - À bientôt, au plaisir, portez-vous bien
+    - À bientôt, au plaisir, prenez soin de vous
+    - À la prochaine, bonne journée, portez-vous bien
+    - À la prochaine, bonne journée, prenez soin de vous
+    - À plus tard, au plaisir
+    - À plus tard, au plaisir, portez-vous bien
+    - À plus tard, au plaisir, prenez soin de vous
+    - Salut, bonne journée
+    - Salut, bonne soirée
+    - À bientôt, portez-vous bien, au revoir
+    - À bientôt, prenez soin de vous, au revoir
+    - À plus tard, portez-vous bien, au revoir
+    - À plus tard, prenez soin de vous, au revoir
+    - Au plaisir, bonne journée
+    - Au plaisir, bonne soirée
+    - Au plaisir, bonne journée, portez-vous bien
+    - Au plaisir, bonne soirée, portez-vous bien
+    - Portez-vous bien, à bientôt
+    - Prenez soin de vous, à bientôt
+    - Bonne journée, au revoir, portez-vous bien
+    - Bonne soirée, au revoir, portez-vous bien
+    - Portez-vous bien, à plus tard
+    - Prenez soin de vous, à plus tard
+    - Au plaisir, bonne journée, prenez soin de vous
+    - Au plaisir, bonne soirée, prenez soin de vous
+    - Bonne journée, portez-vous bien, au revoir
+    - Bonne soirée, portez-vous bien, au revoir
+    - À bientôt, portez-vous bien, prenez soin de vous
+    - À la prochaine fois, portez-vous bien, prenez soin de vous
+    - À plus tard, portez-vous bien, prenez soin de vous
+    - Au plaisir, portez-vous bien, prenez soin de vous
+    - Au plaisir, portez-vous bien, au revoir
+    - Bonne journée, portez-vous bien, prenez soin de vous
+    - Bonne soirée, portez-vous bien, prenez soin de vous
+    - Portez-vous bien, au revoir, à bientôt
+    - Prenez soin de vous, au revoir, à bientôt
+    - Portez-vous bien, bonne journée, prenez soin de vous
+    - Prenez soin de vous, bonne journée, portez-vous bien
+    - Bonne journée, portez-vous bien, au plaisir
+    - Bonne soirée, portez-vous bien, au plaisir
+    - Portez-vous bien, à plus tard, au plaisir
+    - Prenez soin de vous, à plus tard, au plaisir
+    - Portez-vous bien, bonne journée, au plaisir
+    - Prenez soin de vous, bonne journée, au plaisir
+    - Portez-vous bien, bonne soirée, au plaisir
+    - Prenez soin de vous, bonne soirée, au plaisir
+    - Bonne journée, portez-vous bien, à bientôt
+    - Bonne soirée, portez-vous bien, à bientôt
+    - Portez-vous bien, au revoir, à plus tard
+    - Prenez soin de vous, au revoir, à plus tard
+    - Portez-vous bien, bonne journée, à plus tard
+    - Prenez soin de vous, bonne journée, à plus tard
+    - Bonne journée, portez-vous bien, au revoir, à bientôt
+    - Bonne soirée, portez-vous bien, au revoir, à bientôt
+    - Portez-vous bien, à la prochaine, au plaisir
+    - Prenez soin de vous, à la prochaine, au plaisir
+    - Portez-vous bien, bonne journée, au revoir, à plus tard
+    - Prenez soin de vous, bonne journée, au revoir, à plus tard
+    - Portez-vous bien, bonne soirée, au revoir, à plus tard
+    - Prenez soin de vous, bonne soirée, au revoir, à plus tard
+    - Bonne journée, portez-vous bien, à la prochaine, au plaisir
+    - Bonne soirée, portez-vous bien, à la prochaine, au plaisir
+    - Portez-vous bien, à bientôt, au revoir
+    - Prenez soin de vous, à bientôt, au revoir
+    - Portez-vous bien, bonne journée, à bientôt, au revoir
+    - Prenez soin de vous, bonne journée, à bientôt, au revoir
+    - Portez-vous bien, bonne soirée, à bientôt, au revoir
+    - Prenez soin de vous, bonne soirée, à bientôt, au revoir
+    - Bonne journée, portez-vous bien, à plus tard, au revoir
+    - Bonne soirée, portez-vous bien, à plus tard, au revoir
+    - Portez-vous bien, à la prochaine, au revoir, au plaisir
+    - Prenez soin de vous, à la prochaine, au revoir, au plaisir
+    - Portez-vous bien, bonne journée, au plaisir, à bientôt
+    - Prenez soin de vous, bonne journée, au plaisir, à bientôt
+    - Portez-vous bien, bonne soirée, au plaisir, à bientôt
+    - Prenez soin de vous, bonne soirée, au plaisir, à bientôt
+    - Bonne journée, portez-vous bien, à la prochaine, au revoir
+    - Bonne soirée, portez-vous bien, à la prochaine, au revoir
+    - Portez-vous bien, à plus tard, au revoir, au plaisir
+    - Prenez soin de vous, à plus tard, au revoir, au plaisir
+    - Portez-vous bien, bonne journée, à la prochaine, au plaisir
+    - Prenez soin de vous, bonne journée, à la prochaine, au plaisir
+    - Portez-vous bien, bonne soirée, à la prochaine, au plaisir
+    - Prenez soin de vous, bonne soirée, à la prochaine, au plaisir
+    - Bonne journée, portez-vous bien, au revoir, à la prochaine
+    - Bonne soirée, portez-vous bien, au revoir, à la prochaine
+    - Portez-vous bien, à la prochaine, au plaisir, au revoir
+    - Prenez soin de vous, à la prochaine, au plaisir, au revoir
+    - Portez-vous bien, bonne journée, au plaisir, au revoir, à bientôt
+    - Prenez soin de vous, bonne journée, au plaisir, au revoir, à bientôt
+    - Portez-vous bien, bonne soirée, au plaisir, au revoir, à bientôt
+    - Prenez soin de vous, bonne soirée, au plaisir, au revoir, à bientôt
+    - Bonne journée, portez-vous bien, à la prochaine, au plaisir, au revoir
+    - Bonne soirée, portez-vous bien, à la prochaine, au plaisir, au revoir
+    - Portez-vous bien, à plus tard, au revoir, au plaisir, à bientôt
+    - Prenez soin de vous, à plus tard, au revoir, au plaisir, à bientôt
+    - Portez-vous bien, bonne journée, à la prochaine, au plaisir, au revoir
+    - Prenez soin de vous, bonne journée, à la prochaine, au plaisir, au revoir
+    - Portez-vous bien, bonne soirée, à la prochaine, au plaisir, au revoir
+    - Prenez soin de vous, bonne soirée, à la prochaine, au plaisir, au revoir
+    - Bonne journée, portez-vous bien, au revoir, à la prochaine, au plaisir
+    - Bonne soirée, portez-vous bien, au revoir, à la prochaine, au plaisir
+    - Portez-vous bien, au revoir, au plaisir, à bientôt
+    - Prenez soin de vous, au revoir, au plaisir, à bientôt
+    - Portez-vous bien, bonne journée, au revoir, au plaisir, à bientôt
+    - Prenez soin de vous, bonne journée, au revoir, au plaisir, à bientôt
+    - Portez-vous bien, bonne soirée, au revoir, au plaisir, à bientôt
+    - Prenez soin de vous, bonne soirée, au revoir, au plaisir, à bientôt
+    - Bonne journée, portez-vous bien, au plaisir, au revoir, à la prochaine
+    - Bonne soirée, portez-vous bien, au plaisir, au revoir, à la prochaine
+    - Portez-vous bien, à plus tard, au revoir, au plaisir, à la prochaine
+    - Prenez soin de vous, à plus tard, au revoir, au plaisir, à la prochaine
+    - Portez-vous bien, bonne journée, à plus tard, au plaisir, au revoir
+    - Prenez soin de vous, bonne journée, à plus tard, au plaisir, au revoir
+    - Portez-vous bien, bonne soirée, à plus tard, au plaisir, au revoir
+    - Prenez soin de vous, bonne soirée, à plus tard, au plaisir, au revoir
+    - Bonne journée, portez-vous bien, au revoir, à plus tard, au plaisir, à bientôt
+    - Bonne soirée, portez-vous bien, au revoir, à plus tard, au plaisir, à bientôt
+    - Portez-vous bien, à la prochaine, au revoir, au plaisir, à bientôt
+    - Prenez soin de vous, à la prochaine, au revoir, au plaisir, à bientôt
+    - Portez-vous bien, bonne journée, à la prochaine, au revoir, au plaisir
+    - Prenez soin de vous, bonne journée, à la prochaine, au revoir, au plaisir
+    - Portez-vous bien, bonne soirée, à la prochaine, au revoir, au plaisir
+    - Prenez soin de vous, bonne soirée, à la prochaine, au revoir, au plaisir
+- intent: fournir_localisation
+  examples: |
+    - [14.764735,-17.355934](location)
+    - [12.345678,17.765432](location)
+    - [14.123456,-17.654321](location)
+    - [14.987654,-17.123456](location)
+    - [14.6928,-17.44406](location)
+    - [14.123456,-17.987654](location)
+    - [14.111111,17.222222](location)
+    - [14.876543,-17.123456](location)
+    - [17.765432,-14.345678](location)
+    - [14.654321,-17.456789](location)
+    - [14.543210,-17.567890](location)
+    - [14.432109,-17.678901](location)
+    - [14.321098,-17.789012](location)
+    - [14.210987,-17.890123](location)
+    - [14.109876,-17.901234](location)
+    - [14.098765,-17.012345](location)
+    - [14.742385,-17.452371](location)
+    - [14.850123,-17.394564](location)
+    - [14.786345,-17.483920](location)
+    - [14.956732,-17.362851](location)
+    - [14.675849,-17.450193](location)
+    - [14.768295,-17.520103](location)
+    - [14.986345,-17.345129](location)
+    - [14.123123,-17.654654](location)
+    - [14.898989,-17.232323](location)
+    - [14.767676,-17.565656](location)
+    - [14.456456,-17.343434](location)
+    - [14.654654,-17.232323](location)
+    - [14.565656,-17.121212](location)
+    - [14.989898,-17.343434](location)
+    - [14.565434,-17.676767](location)
+    - [14.232323,-17.898989](location)
+    - [14.343434,-17.232323](location)
+    - [14.121212,-17.989898](location)
+    - [14.676767,-17.121212](location)
+    - [14.898989,-17.565656](location)
+    - [14.232323,-17.121212](location)
+    - [14.676767,-17.343434](location)
+    - [14.989898,-17.232323](location)
+    - [14.232323,-17.989898](location)
+    - [14.676767,-17.565656](location)
+    - [14.343434,-17.898989](location)
+    - [14.121212,-17.676767](location)
+    - [14.898989,-17.989898](location)
+    - [14.676767,-17.232323](location)
+    - [14.232323,-17.676767](location)
+    - [14.121212,-17.565656](location)
+    - [14.989898,-17.676767](location)
+    - [14.898989,-17.343434](location)
+    - [14.343434,-17.565656](location)
+    - [14.676767,-17.676767](location)
+    - [14.989898,-17.121212](location)
+    - [14.121212,-17.343434](location)
+    - [14.343434,-17.989898](location)
+    - [14.121212,-17.898989](location)
+    - [14.898989,-17.676767](location)
+    - [14.343434,-17.121212](location)
+    - [14.121212,-17.232323](location)
+    - [14.343434,-17.676767](location)
+    - [14.898989,-17.121212](location)
+    - [14.232323,-17.565656](location)
+    - [14.232323,-17.343434](location)
+    - [14.121212,-17.121212](location)
+- intent: ask_nearest_station
+  examples: |
+    - Quelle est la gare la plus proche ?
+    - Où est la gare la plus proche ?
+    - Gare la plus proche
+    - Je veux savoir la gare la plus proche
+    - Quelle est la gare la plus proche de moi ?
+    - Gare près de moi
+    - Où aller ?
+    - Gare proche
+    - Où se trouve la gare la plus proche ?
+    - Quel est l'arrêt le plus près d'ici ?
+    - Je cherche la station la plus proche.
+    - Y a-t-il une gare à proximité ?
+    - Indique-moi la gare la plus proche.
+    - Peux-tu me dire où est la gare la plus proche ?
+    - Est-ce qu'il y a une gare près d'ici ?
+    - Où puis-je trouver la gare la plus proche de moi ?
+    - Peux-tu me dire où se situe la gare la plus proche ?
+    - Où est-ce que je peux trouver un arrêt de train à proximité ?
+    - Dites-moi où est située la gare la plus proche.
+    - Y a-t-il une gare près d'ici ?
+    - Pourriez-vous me dire où se trouve la gare la plus proche ?
+    - Montre-moi où est la gare la plus proche.
+    - Quel est l'endroit le plus proche où je peux prendre un train ?
+    - Je veux savoir où est l'arrêt de train le plus proche.
+    - Indique-moi la gare la plus proche de moi.
+    - Où est la gare la plus proche d'ici ?
+    - Quelle est la station de train la plus proche ?
+    - Je cherche la gare la plus proche de ma position.
+    - Peux-tu me dire où je peux trouver une gare ?
+    - Y a-t-il une gare près d'ici où je pourrais me rendre ?
+    - Où se trouve l'arrêt de train le plus proche ?
+    - Où puis-je trouver une gare ?
+    - Où est située la gare la plus proche ?
+    - Indique-moi où est la gare la plus proche.
+    - Montre-moi la gare la plus proche.
+    - Où est la gare ?
+    - Je veux savoir où est la gare la plus proche.
+    - Quel est l'arrêt de train le plus proche ?
+    - Où puis-je trouver un arrêt de train à proximité ?
+    - Où puis-je trouver la gare la plus proche ?
+- intent: fournir_lieux
+  examples: |
+    - Et si je suis à [HLM Grand Yoff](lieu) ?
+    - Quelle est la gare la plus proche à [Mermoz](lieu) ?
+    - Quelle est la gare la plus proche à [Biscuiterie](lieu) ?
+    - Quelle est la gare la plus proche à [Almadies](lieu) ?
+    - Quelle est la gare la plus proche à [Cambérène](lieu) ?
+    - Quelle est la gare la plus proche à [Cap Manuel](lieu) ?
+    - Quelle est la gare la plus proche à [Castors](lieu) ?
+    - Quelle est la gare la plus proche à [Cité Keur Gorgui](lieu) ?
+    - Quelle est la gare la plus proche à [Cité Mixta](lieu) ?
+    - Quelle est la gare la plus proche à [Colobane](lieu) ?
+    - Quelle est la gare la plus proche à [Derklé](lieu) ?
+    - Quelle est la gare la plus proche à [Fann](lieu) ?
+    - Quelle est la gare la plus proche à [Fass](lieu) ?
+    - Quelle est la gare la plus proche à [Grand Yoff](lieu) ?
+    - Quelle est la gare la plus proche à [Guédiawaye](lieu) ?
+    - Quelle est la gare la plus proche à [Hann Bel-Air](lieu) ?
+    - Quelle est la gare la plus proche à [HLM](lieu) ?
+    - Quelle est la gare la plus proche à [Liberté](lieu) ?
+    - Quelle est la gare la plus proche à [Médina](lieu) ?
+    - Quelle est la gare la plus proche à [Niayes](lieu) ?
+    - Quelle est la gare la plus proche à [Ouakam](lieu) ?
+    - Quelle est la gare la plus proche à [Parcelles Assainies](lieu) ?
+    - Quelle est la gare la plus proche à [Patte d'Oie](lieu) ?
+    - Quelle est la gare la plus proche à [Point E](lieu) ?
+    - Quelle est la gare la plus proche à [Sacre-Cœur](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Liberté](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Mermoz](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Karack](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Baobabs](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Dieuppeul](lieu) ?
+    - Je suis à [Point E](lieu), où se trouve la gare la plus proche ?
+    - Donne-moi la gare la plus proche de [Sacré Cœur](lieu).
+    - Oui, à [Liberté 6](lieu).
+    - Où est la gare la plus proche de [Fass](lieu) ?
+    - Si je suis à [la Médina](lieu), quelle est la gare la plus proche ?
+    - Indique-moi la gare la plus proche de [Dakar-Plateau](lieu).
+    - Quelle gare est proche de [Yoff](lieu) ?
+    - Je suis à [Ouakam](lieu), où est la gare la plus proche ?
+    - À [Ngor](lieu), où se trouve la gare la plus proche ?
+    - Quelle est la gare la plus proche de [Dieuppeul](lieu) ?
+    - Si je suis aux [Parcelles Assainies](lieu), où est la gare la plus proche ?
+    - Quelle est la gare la plus proche à [Hann Maristes](lieu) ?
+    - Si je suis à [Grand Dakar](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Cambérène](lieu) ?
+    - Indique la gare la plus proche de [Gueule Tapée](lieu).
+    - Si je suis à [Colobane](lieu), où est la gare la plus proche ?
+    - À [Fann](lieu), où est la gare la plus proche ?
+    - Je suis à [Castors](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de [Point E](lieu) ?
+    - La gare la plus proche si je suis à [Amitié](lieu).
+    - Donne-moi la gare la plus proche si je suis à [HLM](lieu).
+    - Je suis à [Liberté 1](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Niary Tally](lieu) ?
+    - Indique la gare la plus proche de [Sicap Baobab](lieu).
+    - Si je suis à [Derklé](lieu), où est la gare la plus proche ?
+    - À [Sacré Cœur 3](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de [Mermoz Sacré Cœur](lieu) ?
+    - La gare la plus proche si je suis à [Grand Médine](lieu).
+    - Donne-moi la gare la plus proche si je suis à [HLM 5](lieu).
+    - Je suis à [Liberté 4](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Patte d'Oie](lieu) ?
+    - Indique la gare la plus proche de [Cité Keur Gorgui](lieu).
+    - Si je suis à [Nord Foire](lieu), où est la gare la plus proche ?
+    - À [Ouest Foire](lieu), où est la gare la plus proche ?
+    - Je suis à [Cité Millionnaire](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de [HLM Grand Médine](lieu) ?
+    - La gare la plus proche si je suis à [Hann Bel-Air](lieu).
+    - Donne-moi la gare la plus proche si je suis à [HLM 6](lieu).
+    - Je suis à [Liberté 5](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Gueule Tapée-Fass-Colobane](lieu) ?
+    - Indique la gare la plus proche de [Fann-Point E-Amitié](lieu).
+    - Si je suis à [Grand Yoff](lieu), où est la gare la plus proche ?
+    - À [Cité Mbackiou Faye](lieu), où est la gare la plus proche ?
+    - Je suis à [Liberté 3](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de moi si je suis à [Mermoz](lieu) ?
+    - Où est la gare la plus proche de [Liberté 3](lieu) ?
+    - Gare la plus proche [Castors](lieu)
+    - Je veux savoir la gare la plus proche
+    - Quelle gare est la plus proche de [Fann Résidence](lieu) ?
+    - Si je suis à [Hann Bel Air](lieu), où est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Khar Yalla](lieu) ?
+    - Indique la gare la plus proche de [HLM Patte d'Oie](lieu).
+    - À [Keur Massar](lieu), quelle est la gare la plus proche ?
+    - Si je suis à [Parcelles Assainies U26](lieu), où est la gare la plus proche ?
+    - Je suis à [Nord Foire Azur](lieu), où est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Yoff Tonghor](lieu) ?
+    - Et si je suis à [ Patte d'Oie](lieu) ?
+    - Quelle est la gare la plus proche à [Gueule Tapée-Fass](lieu) ?
+    - Quelle est la gare la plus proche à [Mermoz Pyrotechnie](lieu) ?
+    - Quelle est la gare la plus proche à [Ngor Virage](lieu) ?
+    - Quelle est la gare la plus proche à [Ouakam Nord](lieu) ?
+    - Quelle est la gare la plus proche à [Parcelles Assainies ](lieu) ?
+    - Quelle est la gare la plus proche à [Patte d'Oie Extension](lieu) ?
+    - Quelle est la gare la plus proche à [Point E Extension](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Karack Extension](lieu) ?
+    - Quelle est la gare la plus proche à [Sicap Mbao](lieu) ?
+    - Je suis à [Gueule Tapée](lieu), où se trouve la gare la plus proche ?
+    - Donne-moi la gare la plus proche de [Ngor](lieu).
+    - Oui, à [HLM 6 ](lieu).
+    - Où est la gare la plus proche de [Sicap Liberté Extension](lieu) ?
+    - Si je suis à [Castors Extension](lieu), quelle est la gare la plus proche ?
+    - Indique-moi la gare la plus proche de [Sicap Baobabs Extension](lieu).
+    - Quelle gare est proche de [Liberté 2](lieu) ?
+    - Je suis à [HLM Grand Yoff](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche à [Ouakam Village](lieu) ?
+    - La gare la plus proche si je suis à [Mermoz Quartier](lieu).
+    - Donne-moi la gare la plus proche si je suis à [Fann Hock](lieu).
+    - Je suis à [Grand Dakar Extension](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Keur Massar Nord](lieu) ?
+    - Indique la gare la plus proche de [Hann Mariste Extension](lieu).
+    - Si je suis à [Nord Foire Est](lieu), où est la gare la plus proche ?
+    - À [Ngor Almadies](lieu), où est la gare la plus proche ?
+    - Je suis à [Cité Terme Sud](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de [Fass Delorme](lieu) ?
+    - Où est la gare la plus proche de [HLM 5 Extension](lieu) ?
+    - Gare la plus proche [Médina Fass](lieu)
+    - Quelle gare est la plus proche de [Sicap Sacré Cœur](lieu) ?
+    - Si je suis à [HLM Sicap Mermoz](lieu), où est la gare la plus proche ?
+    - Indique la gare la plus proche de [Castors Sud](lieu).
+    - À [Point E Université](lieu), où est la gare la plus proche ?
+    - Quelle est la gare la plus proche de moi si je suis à [Sicap Liberté Nord](lieu) ?
+    - Gare la plus proche [Mermoz Pyrotechnie](lieu)
+    - Si je suis à [Sicap Karack Extension](lieu), où est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Point E Café de Rome](lieu) ?
+    - Indique la gare la plus proche de [Fann Résidence Extension](lieu).
+    - À [HLM Nord](lieu), quelle est la gare la plus proche ?
+    - Je suis à [HLM 4](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Liberté 6 Extension](lieu) ?
+    - Indique la gare la plus proche de [Sicap Mbao Extension](lieu).
+    - Si je suis à [Patte d'Oie Village](lieu), où est la gare la plus proche ?
+    - À [Ngor Extension](lieu), où est la gare la plus proche ?
+    - Je suis à [Cité Millionnaire Extension](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de [HLM Grand Yoff Extension](lieu) ?
+    - La gare la plus proche si je suis à [Hann Mariste](lieu).
+    - Donne-moi la gare la plus proche si je suis à [HLM 6 Extension](lieu).
+    - Je suis à [Liberté 5 Extension](lieu), quelle est la gare la plus proche ?
+    - Quelle gare est la plus proche de [Gueule Tapée Extension](lieu) ?
+    - Indique la gare la plus proche de [Fann-Point E Extension](lieu).
+    - Si je suis à [Grand Yoff Extension](lieu), où est la gare la plus proche ?
+    - À [Cité Mbackiou Faye Extension](lieu), où est la gare la plus proche ?
+    - Je suis à [Liberté 3 Extension](lieu), quelle est la gare la plus proche ?
+    - Quelle est la gare la plus proche de moi si je suis à [Mermoz Extension](lieu) ?
+    - Où est la gare la plus proche de [Liberté 3 Extension](lieu) ?
+    - gare proche [hlm](lieu) [grand](lieu) [yoff](lieu)
+    - quelle est la gare la plus proche de [mermoz](lieu)
+- intent: ask_description
+  examples: |
+    - Qui est Ter IA ?
+    - Parle-moi de Ter IA
+    - C'est quoi Ter IA ?
+    - Description de Ter IA
+    - tu est qui ?
+    - Qu'est-ce que Ter IA ?
+    - Description
+    - Qui est tu ?
+    - Parle-moi de toi
+    - Peux-tu me dire qui est Ter IA ?
+    - Explique-moi Ter IA
+    - Pourrais-tu décrire Ter IA ?
+    - Ter IA, c'est qui ?
+    - Parle-moi un peu de Ter IA
+    - Quel est ton avis sur Ter IA ?
+    - Qui se cache derrière Ter IA ?
+    - Définition de Ter IA
+    - J'aimerais en savoir plus sur Ter IA
+    - Ter IA, dis-m'en plus
+    - Explique-moi ce qu'est Ter IA
+    - Ter IA, parle-moi de toi
+    - Décris-moi Ter IA en quelques mots
+    - Qui se trouve derrière Ter IA ?
+    - Parle-moi un peu de ta personnalité, Ter IA
+    - Quelle est l'histoire de Ter IA ?
+    - Ter IA, est-ce une personne ou un concept ?
+    - Raconte-moi Ter IA
+    - Pourquoi parle-t-on de Ter IA ?
+    - Quel est ton rôle, Ter IA ?
+    - Qui es-tu exactement, Ter IA ?
+    - Que fais-tu, Ter IA ?
+    - C'est qui Ter IA en fait ?
+    - Dis-moi qui est Ter IA
+    - Qui est derrière le nom Ter IA ?
+    - Ter IA, tu es une entité ou un programme ?
+    - Ter IA, c'est une personne ?
+    - Ter IA, tu es humain ou machine ?
+    - Ter IA, c'est une personne réelle ?
+    - Ter IA, explique-moi ton fonctionnement
+    - Ter IA, tu es une IA ?
+    - Peux-tu me parler de Ter IA en détail ?
+    - Ter IA, tu fais quoi dans la vie ?
+    - Ter IA, comment tu fonctionnes ?
+    - Est-ce que Ter IA est un robot ?
+    - Ter IA, tu es un chatbot ?
+    - Ter IA, tu es un programme informatique ?
+    - Qui est Ter IA exactement ?
+    - Parle-moi de Ter IA, s'il te plaît
+    - Ter IA, tu es une intelligence artificielle ?
+    - Ter IA, c'est ton nom ?
+    - Ter IA, tu es une IA développée par qui ?
+    - Pourquoi on parle de Ter IA ?
+    - Ter IA, tu es créé par qui ?
+    - Ter IA, tu es développé par qui ?
+    - Ter IA, quel est ton but ?
+    - Ter IA, tu fais quoi ?
+    - Qui t'a créé, Ter IA ?
+    - Ter IA, tu es une création de qui ?
+    - Est-ce que Ter IA est une personne réelle ?
+    - Ter IA, tu es une entité virtuelle ?
+    - Ter IA, quel est ton rôle ?
+    - Ter IA, explique-moi ton utilité
+    - Ter IA, pourquoi ton nom ?
+    - Ter IA, tu es quel genre de programme ?
+    - Ter IA, tu es un assistant virtuel ?
+    - Ter IA, tu es une intelligence artificielle développée pour quoi ?
+    - Ter IA, comment tu fonctionnes exactement ?
+    - Ter IA, tu es une technologie ou une personne ?
+    - Ter IA, tu es créé pour quoi ?
+    - Ter IA, c'est un projet ou une personne ?
+    - Ter IA, tu es une invention ?
+    - Ter IA, comment tu es développé ?
+    - Ter IA, c'est un programme ou une personne ?
+    - Ter IA, explique-moi ton nom
+    - Ter IA, c'est quoi ton but ?
+    - Ter IA, tu es développé pour quoi ?
+    - Ter IA, tu es un projet ?
+    - Ter IA, tu es un programme ou un robot ?
+    - Ter IA, tu es une intelligence artificielle ou un projet ?
+    - Ter IA, quel est ton rôle dans la vie ?
+    - Ter IA, tu es créé pour quoi faire ?
+    - Ter IA, c'est un projet ou une technologie ?
+    - Ter IA, tu es un assistant personnel ?
+    - Ter IA, tu es un assistant numérique ?
+    - Ter IA, tu es une intelligence virtuelle ?
+    - Ter IA, c'est une technologie ou un programme ?
+    - Ter IA, tu es un programme informatique ou une personne ?
+    - Ter IA, tu es un assistant de qui ?
+    - Ter IA, tu es une intelligence artificielle créé pour quoi ?
+    - Ter IA, tu es un assistant personnel virtuel ?
+    - Ter IA, c'est un projet ou une invention ?
+    - Ter IA, tu es un programme développé pour quoi ?
+    - Ter IA, tu es une intelligence artificielle développée comment ?
+    - Ter IA, tu es une technologie ou une personne réelle ?
+    - Ter IA, tu es développé par quelle entreprise ?
+    - Ter IA, tu es développé pour qui ?
+    - Ter IA, tu es un robot ou une intelligence artificielle ?
+    - Ter IA, tu es un assistant virtuel développé pour quoi ?
+    - Ter IA, tu es un programme ou une intelligence artificielle ?
+    - Ter IA, tu es une technologie développée par qui ?
+    - Ter IA, tu es une technologie ou un projet ?
+    - Ter IA, tu es un projet de qui ?
+    - Ter IA, tu es une invention de qui ?
+    - Ter IA, tu es une personne ou un programme ?
+    - Ter IA, tu es un projet de quelle entreprise ?
+    - Ter IA, tu es un programme ou une technologie ?
+    - Ter IA, tu es développé pour quel usage ?
+    - Ter IA, tu es une technologie développée comment ?
+    - Ter IA, tu es un projet informatique ?
+    - Ter IA, tu es une intelligence artificielle développée pourquoi ?
+    - Ter IA, tu es une intelligence artificielle ou une personne réelle ?
+    - Ter IA, tu es un assistant virtuel créé pour quoi ?
+    - Ter IA, tu es développé par quelle société ?
+    - Ter IA, tu es une invention ou une technologie ?
+    - Ter IA, tu es un assistant numérique développé pour quoi ?
+    - Ter IA, tu es une technologie ou une personne virtuelle ?
+    - Ter IA, tu es un assistant de quelle entreprise ?
+    - Ter IA, tu es un assistant virtuel ou un programme ?
+    - Ter IA, tu es développé par qui exactement ?
+    - Ter IA, tu es un projet de quelle société ?
+    - Ter IA, tu es une intelligence artificielle ou une technologie ?
+    - Ter IA, tu es un assistant virtuel développé par qui ?
+    - Ter IA, tu es un assistant de quelle entreprise exactement ?
+    - Ter IA, tu es une intelligence artificielle ou une invention ?
+    - Ter IA, tu es un assistant numérique développé par qui ?
+    - Ter IA, tu es développé pour quoi exactement ?
+    - Ter IA, tu es un projet informatique développé comment ?
+    - Ter IA, tu es une technologie ou une intelligence artificielle ?
+    - Ter IA, tu es développé pour quelle raison ?
+    - Ter IA, tu es un assistant virtuel créé par qui ?
+    - Ter IA, tu es une invention développée par qui ?
+    - Ter IA, tu es un programme ou un projet ?
+    - Ter IA, tu es une personne ou une technologie ?
+    - Ter IA, tu es un assistant de quelle société ?
+    - Ter IA, tu es un assistant numérique ou une intelligence artificielle ?
+    - Ter IA, tu es développé par une entreprise ou une personne ?
+    - Ter IA, tu es une technologie développée par quelle entreprise ?
+    - Ter IA, tu es développé pour quel but ?
+    - Ter IA, tu es une intelligence artificielle créée par qui ?
+    - Ter IA, tu es un assistant virtuel ou une technologie ?
+    - Ter IA, tu es développé par qui précisément ?
+    - Ter IA, tu es un projet de quelle personne ?
+    - Ter IA, tu es un assistant numérique ou un programme ?
+    - Ter IA, tu es une invention de quelle entreprise ?
+    - Ter IA, tu es une technologie ou une invention ?
+    - Ter IA, tu es développé par quelle personne ?
+    - Ter IA, tu es un assistant virtuel développé par quelle entreprise ?
+    - Ter IA, tu es un assistant de quelle personne ?
+    - Ter IA, tu es développé pour qui exactement ?
+    - Ter IA, tu es une technologie ou un programme informatique ?
+    - Ter IA, tu es développé pour quelle utilisation ?
+    - Ter IA, tu es un assistant numérique ou un assistant virtuel ?
+    - Ter IA, tu es une intelligence artificielle ou une entreprise ?
+    - Ter IA, tu es développé par quelle organisation ?
+    - Ter IA, tu es une technologie développée par quelle personne ?
+    - Ter IA, tu es développé par qui pour quelle raison ?
+    - Ter IA, tu es une technologie ou une personne développée par qui ?
+    - Ter IA, tu es un programme ou un assistant numérique ?
+    - Ter IA, tu es une invention développée par quelle personne ?
+    - Ter IA, tu es un assistant de quelle organisation ?
+    - Ter IA, tu es développé pour qui précisément ?
+    - Ter IA, tu es une intelligence artificielle ou une invention développée par qui ?
+    - Ter IA, tu es un assistant virtuel développé pour quelle entreprise ?
+- intent: train_horaire_lieuDepart_lieuArrive
+  examples: |
+    - Montre-moi les horaires des trains entre [Dakar](departure_station) et [Diamniadio](arrival_station).
+    - Montre-moi les horaires des trains entre [Dakar plateau](departure_station) et [Diamniadio](arrival_station).
+    - Montre-moi les horaires des trains entre [plateau](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Pikine](departure_station) et [Bargny](arrival_station).
+    - Le train de [Dakar](departure_station) pour [Diamniadio](arrival_station) est à quelle heure ?
+    - Je voudrais connaître les horaires des trains entre [Rufisque](departure_station) et [Bargny](arrival_station).
+    - Horaires des trains entre [Dakar](departure_station) et [Rufisque](arrival_station).
+    - Le train de [Dakar](departure_station) à [Diamniadio](arrival_station) part à quelle heure ?
+    - Pouvez-vous m'indiquer les horaires des trains entre [Pikine](departure_station) et [Bargny](arrival_station) ?
+    - Horaires des trains entre [Diamniadio](departure_station) et [Dakar](arrival_station).
+    - Donne-moi les horaires des trains entre [Dakar](departure_station) et [Colobane](arrival_station).
+    - Horaires des trains entre [Pikine](departure_station) et [Rufisque](arrival_station).
+    - Donne-moi les horaires des trains entre [Diamniadio](departure_station) et [Bargny](arrival_station).
+    - Horaires des trains entre [Rufisque](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Rufisque](departure_station) et [Pikine](arrival_station).
+    - Donne-moi les horaires des trains entre [Diamniadio](departure_station) et [Rufisque](arrival_station).
+    - Horaires des trains entre [Pikine](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Dakar](departure_station) et [Pikine](arrival_station).
+    - Donne-moi les horaires des trains entre [Diamniadio](departure_station) et [Pikine](arrival_station).
+    - Horaires des trains entre [Pikine](departure_station) et [Thiaroye](arrival_station).
+    - Horaires des trains entre [Dakar](departure_station) et [Thiaroye](arrival_station).
+    - Donne-moi les horaires des trains entre [Bargny](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Rufisque](departure_station) et [Dakar](arrival_station).
+    - Horaires des trains entre [Keur Mbaye Fall](departure_station) et [Yeumbeul](arrival_station).
+    - À quelle heure part le prochain train de [Baux Maraichers](departure_station) pour [Pikine](arrival_station) ?
+    - Donne-moi les horaires des trains entre [Colobane](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Dakar](arrival_station).
+    - Le train de [Yeumbeul](departure_station) à [Diamniadio](arrival_station) est à quelle heure ?
+    - Je voudrais connaître les horaires des trains entre [Baux Maraichers](departure_station) et [Rufisque](arrival_station).
+    - À quelle heure passe le prochain train à [Hann](station) ?
+    - Pouvez-vous m'indiquer les horaires des trains entre [Dalifort](departure_station) et [Pikine](arrival_station) ?
+    - Horaires des trains entre [Colobane](departure_station) et [Dakar](arrival_station).
+    - Donne-moi les horaires des trains entre [Hann](departure_station) et [Bargny](arrival_station).
+    - Horaires des trains entre [Diamniadio](departure_station) et [Dalifort](arrival_station).
+    - Donne-moi les horaires des trains entre [Keur Mbaye Fall](departure_station) et [Colobane](arrival_station).
+    - Horaires des trains entre [Yeumbeul](departure_station) et [Hann](arrival_station).
+    - Donne-moi les horaires des trains entre [Rufisque](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Baux Maraichers](arrival_station).
+    - Horaires des trains entre [Bargny](departure_station) et [Pikine](arrival_station).
+    - Donne-moi les horaires des trains entre [Yeumbeul](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Hann](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Donne-moi les horaires des trains entre [Dalifort](departure_station) et [Colobane](arrival_station).
+    - Horaires des trains entre [Baux Maraichers](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Diamniadio](departure_station) et [Yeumbeul](arrival_station).
+    - Donne-moi les horaires des trains entre [Bargny](departure_station) et [Colobane](arrival_station).
+    - Horaires des trains entre [Pikine](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [plateau](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Montre-moi les horaires des trains entre [Dakar](departure_station) et [Diamniadio](arrival_station)
+    - Montre-moi les horaires des trains entre [Diamniadio](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [Bargny](departure_station) et [Thiaroye](arrival_station).
+    - Donne-moi les horaires des trains entre [Yeumbeul](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Rufisque](arrival_station).
+    - À quelle heure part le prochain train de [Dakar](departure_station) pour [Pikine](arrival_station) ?
+    - Montre-moi les horaires des trains entre [Colobane](departure_station) et [Yeumbeul](arrival_station).
+    - Horaires des trains entre [Baux Maraichers](departure_station) et [Diamniadio](arrival_station).
+    - Pouvez-vous m'indiquer les horaires des trains entre [Pikine](departure_station) et [Dalifort](arrival_station) ?
+    - Horaires des trains entre [Colobane](departure_station) et [Baux Maraichers](arrival_station).
+    - Montre-moi les horaires des trains entre [Thiaroye](departure_station) et [Dakar](arrival_station).
+    - Horaires des trains entre [Yeumbeul](departure_station) et [Dalifort](arrival_station).
+    - Donne-moi les horaires des trains entre [Keur Mbaye Fall](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Rufisque](departure_station) et [Baux Maraichers](arrival_station).
+    - Montre-moi les horaires des trains entre [Pikine](departure_station) et [Thiaroye](arrival_station).
+    - Horaires des trains entre [Dakar](departure_station) et [Baux Maraichers](arrival_station).
+    - Donne-moi les horaires des trains entre [Hann](departure_station) et [Dalifort](arrival_station).
+    - Horaires des trains entre [Diamniadio](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Montre-moi les horaires des trains entre [Colobane](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Thiaroye](arrival_station).
+    - Donne-moi les horaires des trains entre [Baux Maraichers](departure_station) et [Yeumbeul](arrival_station).
+    - Horaires des trains entre [Keur Mbaye Fall](departure_station) et [Colobane](arrival_station).
+    - Montre-moi les horaires des trains entre [Pikine](departure_station) et [Dalifort](arrival_station).
+    - Horaires des trains entre [Thiaroye](departure_station) et [Yeumbeul](arrival_station).
+    - Donne-moi les horaires des trains entre [Hann](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [Diamniadio](departure_station) et [Baux Maraichers](arrival_station).
+    - Montre-moi les horaires des trains entre [Rufisque](departure_station) et [Dalifort](arrival_station).
+    - Horaires des trains entre [Bargny](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Donne-moi les horaires des trains entre [Colobane](departure_station) et [Thiaroye](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Yeumbeul](arrival_station).
+    - Montre-moi les horaires des trains entre [Baux Maraichers](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Keur Mbaye Fall](departure_station) et [Dakar](arrival_station).
+    - Donne-moi les horaires des trains entre [Pikine](departure_station) et [Keur Mbaye Fall](arrival_station).
+    - Horaires des trains entre [Thiaroye](departure_station) et [Colobane](arrival_station).
+    - Montre-moi les horaires des trains entre [Hann](departure_station) et [Baux Maraichers](arrival_station).
+    - Horaires des trains entre [Diamniadio](departure_station) et [Rufisque](arrival_station).
+    - Donne-moi les horaires des trains entre [Yeumbeul](departure_station) et [Hann](arrival_station).
+    - Horaires des trains entre [Rufisque](departure_station) et [Thiaroye](arrival_station).
+    - Montre-moi les horaires des trains entre [Pikine](departure_station) et [Baux Maraichers](arrival_station).
+    - Horaires des trains entre [Colobane](departure_station) et [Dalifort](arrival_station).
+    - Donne-moi les horaires des trains entre [Keur Mbaye Fall](departure_station) et [Yeumbeul](arrival_station).
+    - Horaires des trains entre [Dalifort](departure_station) et [Hann](arrival_station).
+    - Montre-moi les horaires des trains entre [Baux Maraichers](departure_station) et [Diamniadio](arrival_station).
+    - Horaires des trains entre [Keur Mbaye Fall](departure_station) et [Thiaroye](arrival_station).
+    - Donne-moi les horaires des trains entre [Pikine](departure_station) et [Thiaroye](arrival_station).
+    - Horaires des trains entre [Thiaroye](departure_station) et [Rufisque](arrival_station).
+    - Montre-moi les horaires des trains entre [Hann](departure_station) et [Dalifort](arrival_station).
+    - Horaires des trains entre [Colobane](departure_station) et [Thiaroye](arrival_station).
+    - Montre-moi les horaires des trains entre [Thiaroye](departure_station) et [Yeumbeul](arrival_station).
+    - Donne-moi les horaires des trains entre [Hann](departure_station) et [Baux Maraichers](arrival_station).
+- intent: train_horaire_heure
+  examples: |
+    - a [5h](heure)
+    - pour les horaires a [6h](heure)
+    - [7h](heure)
+    - les horaires de ses gare pour[8h](heure)
+    - pour [9h](heure)
+    - vers [10h](heure)
+    - horaires a [11h](heure)
+    - a [12h](heure)
+    - horaire prevu a [13h](heure)
+    - vers [14h](heure)
+    - pour [15h](heure)
+    - a [16h](heure)
+    - horaires pour [17h](heure)
+    - a [18h](heure) precises
+    - les horaires pour [19h](heure)
+    - a [20](heure):30
+    - horaire a [21h](heure)
+    - les horaires a [22h](heure)
+    - a [9h](heure)
+    - pour les horaires a [6heure](heure)
+    - [11h](heure)
+    - les horaires de ses gare pour [17h](heure)
+    - pour [11](heure):50
+    - horaires a [8](heure)
+    - a [7h](heure) du matin
+    - horaire prevu a [15h](heure)
+    - vers [12h](heure)
+    - pour [16h](heure)
+    - a [9h](heure) du matin
+    - horaires pour [14h](heure)
+    - les horaires pour [13h](heure)
+    - a [19](heure):30
+    - horaire a [20h](heure)
+    - les horaires a [5h](heure) du matin
+    - horaire a [4h](heure)
+    - pour les horaires pour [18h](heure)
+    - horaire prevu a [12](heure):30
+    - horaires pour[7](heure):50
+    - a [16h](heure) du matin
+    - les horaires a [3h](heure)
+    - horaire prevu a [19h](heure)
+    - pour [15h](heure) du matin
+    - a [20h](heure)
+    - les horaires a [14h](heure)
+    - horaire a [13h](heure)
+    - pour les horaires pour [17h](heure)
+    - horaire prevu a [16](heure):50
+    - a [11h](heure) du matin
+    - horaires pour[8h](heure)
+    - a[5h](heure)
+    - les horaires pour [10h](heure)
+    - horaire a [7h](heure)
+    - horaire a [9](heure) h
+    - horaire a [12](heure) h
+    - horaire a [8](heure) h
+    - a [18h30](heure)
+    - pour les horaires a [19h](heure)
+    - [20h](heure)
+    - les horaires de ses gare pour [21h](heure)
+    - pour [22h](heure)
+    - vers [23h](heure)
+    - horaires a [0h](heure)
+    - a [1h](heure)
+    - horaire prevu a [2h](heure)
+    - vers [3h](heure)
+    - pour [4h](heure)
+    - horaires pour [6h](heure)
+    - a [7h30](heure) precises
+    - les horaires pour [8h](heure)
+    - a [9h](heure):15
+    - horaire a [10h](heure)
+    - les horaires a [11h](heure)
+    - horaires pour [13h](heure)
+    - a [14h](heure)
+    - les horaires a [15h](heure)
+    - horaire a [16h](heure)
+    - pour [17h](heure)
+    - a [18h](heure) du matin
+    - horaire prevu a [19h30](heure)
+    - vers [20h](heure)
+    - pour [21h](heure)
+    - a [22h](heure)
+    - horaire a [23h](heure)
+    - pour les horaires pour [5h](heure)
+    - horaire prevu a [6h](heure):30
+    - horaires pour [7h](heure) du matin
+    - a [8h](heure)
+    - les horaires a [9h](heure)
+    - pour [11h](heure)
+    - pour les horaires pour [14h](heure)
+    - horaire prevu a [15h](heure):30
+    - horaires pour [16h](heure)
+    - a [17h](heure)
+    - horaire a [18h](heure)
+    - pour [19h](heure)
+    - pour les horaires pour [22h](heure)
+    - horaire prevu a [23h](heure):30
+    - a [4h](heure) du matin
+    - les horaires a [5h](heure)
+    - horaire a [6h](heure)
+    - pour [7h](heure)
+    - horaire a [9h](heure)
+    - pour les horaires pour [10h](heure)
+    - horaire prevu a [11h](heure):30
+    - horaires pour [12h](heure)
+    - a [13h](heure)
+    - horaire a [15h](heure)
+- intent: Merci
+  examples: |
+    - Merci beaucoup pour votre aide !
+    - Je vous remercie pour l'information.
+    - Merci infiniment !
+    - Je suis très reconnaissant pour votre assistance.
+    - Merci de m'avoir aidé.
+    - C'est très gentil de votre part, merci !
+    - Merci pour tout ce que vous avez fait.
+    - Je vous remercie énormément.
+    - Merci bien.
+    - Merci pour votre soutien.
+    - Je vous suis très reconnaissant.
+    - Merci, c'est très apprécié.
+    - Merci pour votre temps et votre aide.
+    - Merci d'avoir pris le temps de m'aider.
+    - Merci beaucoup, vous êtes génial !
+    - Merci pour votre réponse rapide.
+    - Je vous suis très reconnaissant pour votre aide précieuse.
+    - Merci pour les informations fournies.
+    - Merci pour votre compréhension.
+    - Merci de m'avoir éclairé sur ce sujet.
+    - Merci, vous avez été d'une grande aide.
+    - Merci beaucoup, cela m'aide énormément.
+    - Merci pour votre patience.
+    - Merci de votre attention.
+    - Je vous remercie pour vos conseils.
+    - Merci pour votre disponibilité.
+    - Merci de m'avoir expliqué cela.
+    - Merci de m'avoir guidé.
+    - Merci pour votre professionnalisme.
+    - Merci, je ne sais pas comment vous remercier assez.
+    - Merci pour votre réactivité.
+    - Je vous suis reconnaissant pour votre assistance.
+    - Merci d'avoir pris le temps de répondre à mes questions.
+    - Merci, cela compte beaucoup pour moi.
+    - Merci pour votre gentillesse.
+    - Merci pour votre bienveillance.
+    - Merci pour votre coopération.
+    - Merci pour votre promptitude.
+    - Merci pour votre dévouement.
+    - Merci, vous êtes formidable.
+    - Merci de m'avoir aidé à comprendre.
+    - Merci de m'avoir fourni ces informations.
+    - Merci de m'avoir soutenu.
+    - Merci pour votre aide précieuse.
+    - Merci d'avoir été là pour moi.
+    - Merci pour vos efforts.
+    - Merci pour votre intervention rapide.
+    - Merci d'avoir pris le temps de m'écouter.
+    - Merci pour votre assistance rapide.
+    - Merci pour votre aide efficace.
+    - Merci, votre aide est inestimable.
+    - Merci pour votre intervention.
+- intent: nlu_fallback
+  examples: |
+    - hjjkh
+    - quoi
+    - oihjdghuipù^mugeghuikgghuikojgfytghjko
+    - zaertyuipmkj,nbvcxwsqezrtyuiopokjhgvcdfg
+    - ill pLeut ?
+    - qsjjqjsqjjhs
+- intent: next_train_horaire
+  examples: |
+    - Quand passe le prochain train a la gare de [Dakar Plateau](next_train_gare)
+    - quelle heure prochain train a la gare de [colobane](next_train_gare)
+    - [colobane](next_train_gare) prochain train
+    - [Baux Maraichers](next_train_gare) prochain train
+    - [Dakar Plateau](next_train_gare) prochain train
+    - [Keur Mbaye Fall](next_train_gare) prochain train
+    - Quand passe le prochain train à la gare de [Dakar Plateau](next_train_gare)
+    - Quelle heure est le prochain train à la gare de [Colobane](next_train_gare)
+    - À quelle heure passe le prochain train à [Hann](next_train_gare)
+    - Quand est le prochain train à la gare de [Dalifort](next_train_gare)
+    - Quelle est l'heure du prochain train à la gare de [Baux Maraichers](next_train_gare)
+    - Quand arrive le prochain train à la gare de [Pikine](next_train_gare)
+    - Prochain train à quelle heure à [Thiaroye](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Yeumbeul](next_train_gare)
+    - Quand est le prochain train à la gare de [Keur Mbaye Fall](next_train_gare)
+    - Quelle heure prochain train à la gare de [PNR](next_train_gare)
+    - Quand passe le prochain train à la gare de [Rufisque](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Diamniadio](next_train_gare)
+    - Quelle est l'heure du prochain train à la gare de [Bargny](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [Dakar Plateau](next_train_gare)
+    - Quand passe le prochain train à [Colobane](next_train_gare)
+    - Quelle heure est le prochain train à la gare de [Hann](next_train_gare)
+    - Quand arrive le prochain train à la gare de [Dalifort](next_train_gare)
+    - Prochain train à la gare de [Baux Maraichers](next_train_gare)
+    - À quelle heure est le prochain train à [Pikine](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Thiaroye](next_train_gare)
+    - Quand est prévu le prochain train à la gare de [Yeumbeul](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Keur Mbaye Fall](next_train_gare)
+    - Quand passe le prochain train à la gare de [PNR](next_train_gare)
+    - À quelle heure est le prochain train à [Rufisque](next_train_gare)
+    - Quand est le prochain train à la gare de [Diamniadio](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à la gare de [Bargny](next_train_gare)
+    - Prochain train à la gare de [Colobane](next_train_gare)
+    - À quelle heure est le prochain train à [Hann](next_train_gare)
+    - Quand arrive le prochain train à [Dalifort](next_train_gare)
+    - Prochain train à la gare de [Pikine](next_train_gare)
+    - Quand est le prochain train à la gare de [Thiaroye](next_train_gare)
+    - À quelle heure est prévu le prochain train à [Yeumbeul](next_train_gare)
+    - Quand est prévu le prochain train à la gare de [Keur Mbaye Fall](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à [PNR](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Rufisque](next_train_gare)
+    - Quand passe le prochain train à la gare de [Diamniadio](next_train_gare)
+    - Prochain train à quelle heure à la gare de [Bargny](next_train_gare)
+    - Quand est le prochain train à la gare de [Dakar Plateau](next_train_gare)
+    - À quelle heure passe le prochain train à [Colobane](next_train_gare)
+    - Quelle est l'heure du prochain train à [Hann](next_train_gare)
+    - Prochain train à quelle heure à la gare de [Dalifort](next_train_gare)
+    - À quelle heure passe le prochain train à [Baux Maraichers](next_train_gare)
+    - Quand passe le prochain train à [Pikine](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Thiaroye](next_train_gare)
+    - Prochain train à la gare de [Yeumbeul](next_train_gare)
+    - Quand est prévu le prochain train à [Keur Mbaye Fall](next_train_gare)
+    - Prochain train à quelle heure à la gare de [PNR](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Rufisque](next_train_gare)
+    - Quand passe le prochain train à [Diamniadio](next_train_gare)
+    - À quelle heure est le prochain train à la gare de [Dakar Plateau](next_train_gare)
+    - Prochain train à quelle heure à [Colobane](next_train_gare)
+    - Quand est le prochain train à [Hann](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à la gare de [Dalifort](next_train_gare)
+    - Prochain train à [Baux Maraichers](next_train_gare)
+    - Quand passe le prochain train à la gare de [Pikine](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Yeumbeul](next_train_gare)
+    - Quelle est l'heure du prochain train à la gare de [PNR](next_train_gare)
+    - Quand passe le prochain train à [Rufisque](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [Diamniadio](next_train_gare)
+    - Prochain train à [Bargny](next_train_gare)
+    - Prochain train à quelle heure à la gare de [Colobane](next_train_gare)
+    - À quelle heure est prévu le prochain train à [Hann](next_train_gare)
+    - Prochain train à [Dalifort](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à la gare de [Baux Maraichers](next_train_gare)
+    - Quand est prévu le prochain train à [Yeumbeul](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [Keur Mbaye Fall](next_train_gare)
+    - Quand passe le prochain train à [PNR](next_train_gare)
+    - Prochain train à la gare de [Rufisque](next_train_gare)
+    - À quelle heure est le prochain train à la gare de [Diamniadio](next_train_gare)
+    - Quand est prévu le prochain train à la gare de [Bargny](next_train_gare)
+    - Prochain train à quelle heure à la gare de [Dakar Plateau](next_train_gare)
+    - À quelle heure est le prochain train à [Colobane](next_train_gare)
+    - Quand passe le prochain train à [Dalifort](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Baux Maraichers](next_train_gare)
+    - Prochain train à [Pikine](next_train_gare)
+    - Quand passe le prochain train à la gare de [Thiaroye](next_train_gare)
+    - Quand passe le prochain train à [Dakar Plateau](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à la gare de [Colobane](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [Hann](next_train_gare)
+    - Prochain train à quelle heure à la gare de [Baux Maraichers](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Pikine](next_train_gare)
+    - Prochain train à [Thiaroye](next_train_gare)
+    - À quelle heure part le prochain train à [Keur Mbaye Fall](next_train_gare)
+    - À quelle heure est prévu le prochain train à [Rufisque](next_train_gare)
+    - Prochain train à [Diamniadio](next_train_gare)
+    - Quand passe le prochain train à la gare de [Bargny](next_train_gare)
+    - Prochain train à quelle heure à [Hann](next_train_gare)
+    - À quelle heure est le prochain train à [Dalifort](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [Yeumbeul](next_train_gare)
+    - Quand passe le prochain train à [Keur Mbaye Fall](next_train_gare)
+    - À quelle heure est prévu le prochain train à la gare de [PNR](next_train_gare)
+    - Prochain train à [Rufisque](next_train_gare)
+    - Quand est prévu le prochain train à la gare de [Diamniadio](next_train_gare)
+    - À quelle heure passe le prochain train à [Bargny](next_train_gare)
+    - Quand passe le prochain train à la gare de [Yeumbeul](next_train_gare)
+    - À quelle heure part le prochain train à la gare de [Pikine](next_train_gare)
+    - Quand est prévu le prochain train à la gare de [Thiaroye](next_train_gare)
+    - Quand est le prochain train à [Keur Mbaye Fall](next_train_gare)
+    - À quelle heure est prévu le prochain train à [Diamniadio](next_train_gare)
+    - Prochain train à la gare de [Bargny](next_train_gare)
+    - Quelle heure est prévue pour le prochain train à [Colobane](next_train_gare)
+    - Prochain train à [Hann](next_train_gare)
+    - À quelle heure passe le prochain train à la gare de [Baux Maraichers](next_train_gare)
+    - Quand est le prochain train à la gare de [Pikine](next_train_gare)
+    - À quelle heure passe le prochain train à [Thiaroye](next_train_gare)
+    - Prochain train à [Yeumbeul](next_train_gare)
+    - Prochain train à [PNR](next_train_gare)
+    - quand passe le prochain train a [colobane](next_train_gare) ?
+    - quand passe le prochain train a [colobane](next_train_gare)
+- intent: tarif_entre_gare
+  examples: |
+    - Quel est le tarif entre [HLM Grand Yoff](Ticket_depart) et [Marché Sandaga](Ticket_arrive) ?
+    - Combien coûte un ticket de [Dakar Plateau](Ticket_depart) à [Colobane](Ticket_arrive) ?
+    - Je veux connaître le prix du ticket de [Hann](Ticket_depart) à [Diamniadio](Ticket_arrive).
+    - Pouvez-vous me dire le tarif entre [Dalifort](Ticket_depart) et [Baux Maraichers](Ticket_arrive) ?
+    - Quel est le prix d'un billet de [Pikine](Ticket_depart) à [Thiaroye](Ticket_arrive) ?
+    - Je veux acheter un ticket de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive), combien ça coûte ?
+    - Combien pour un billet de [PNR](Ticket_depart) à [Rufisque](Ticket_arrive) ?
+    - Pouvez-vous me donner le tarif entre [Rufisque](Ticket_depart) et [Diamniadio](Ticket_arrive) ?
+    - Combien coûte un ticket de [Bargny](Ticket_depart) à [Dakar Plateau](Ticket_arrive) ?
+    - Je cherche le prix d'un billet de [Colobane](Ticket_depart) à [HLM Grand Yoff](Ticket_arrive).
+    - Quel est le tarif entre [Marché Sandaga](Ticket_depart) et [Hann](Ticket_arrive) ?
+    - Pouvez-vous me dire combien coûte un ticket de [Baux Maraichers](Ticket_depart) à [Pikine](Ticket_arrive) ?
+    - Combien pour un billet de [Thiaroye](Ticket_depart) à [Yeumbeul](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [Keur Mbaye Fall](Ticket_depart) et [PNR](Ticket_arrive).
+    - Quel est le prix d'un ticket de [Rufisque](Ticket_depart) à [Bargny](Ticket_arrive) ?
+    - Combien coûte un billet de [Diamniadio](Ticket_depart) à [Dakar Plateau](Ticket_arrive) ?
+    - Pouvez-vous me donner le tarif entre [Colobane](Ticket_depart) et [Dalifort](Ticket_arrive) ?
+    - Quel est le prix d'un ticket de [Hann](Ticket_depart) à [Baux Maraichers](Ticket_arrive) ?
+    - Je veux acheter un billet de [Pikine](Ticket_depart) à [Thiaroye](Ticket_arrive), combien ça coûte ?
+    - Combien pour un ticket de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive) ?
+    - Pouvez-vous me dire le tarif entre [PNR](Ticket_depart) et [Rufisque](Ticket_arrive) ?
+    - Quel est le prix d'un billet de [Bargny](Ticket_depart) à [Diamniadio](Ticket_arrive) ?
+    - Combien coûte un ticket de [Dakar Plateau](Ticket_depart) à [HLM Grand Yoff](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [Colobane](Ticket_depart) et [Hann](Ticket_arrive).
+    - Pouvez-vous me dire combien coûte un billet de [Dalifort](Ticket_depart) à [Baux Maraichers](Ticket_arrive) ?
+    - Quel est le tarif entre [Pikine](Ticket_depart) et [Thiaroye](Ticket_arrive) ?
+    - Je cherche le prix d'un ticket de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive).
+    - Quel est le tarif entre [Rufisque](Ticket_depart) et [Diamniadio](Ticket_arrive) ?
+    - Pouvez-vous me donner le prix d'un billet de [Bargny](Ticket_depart) à [Dakar Plateau](Ticket_arrive) ?
+    - Combien coûte un ticket de [HLM Grand Yoff](Ticket_depart) à [Marché Sandaga](Ticket_arrive) ?
+    - Quel est le prix d'un billet de [Colobane](Ticket_depart) à [Hann](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [Dalifort](Ticket_depart) et [Baux Maraichers](Ticket_arrive).
+    - Pouvez-vous me dire combien coûte un ticket de [Pikine](Ticket_depart) à [Thiaroye](Ticket_arrive) ?
+    - Combien pour un billet de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive) ?
+    - Quel est le tarif entre [PNR](Ticket_depart) et [Rufisque](Ticket_arrive) ?
+    - Je cherche le prix d'un ticket de [Rufisque](Ticket_depart) à [Diamniadio](Ticket_arrive).
+    - Pouvez-vous me donner le tarif entre [Bargny](Ticket_depart) et [Dakar Plateau](Ticket_arrive) ?
+    - Combien coûte un billet de [HLM Grand Yoff](Ticket_depart) à [Colobane](Ticket_arrive) ?
+    - Je veux connaître le prix d'un ticket de [Baux Maraichers](Ticket_depart) à [Pikine](Ticket_arrive).
+    - Pouvez-vous me dire combien coûte un billet de [Thiaroye](Ticket_depart) à [Yeumbeul](Ticket_arrive) ?
+    - Combien pour un ticket de [Keur Mbaye Fall](Ticket_depart) à [PNR](Ticket_arrive) ?
+    - Quel est le tarif entre [Rufisque](Ticket_depart) et [Bargny](Ticket_arrive) ?
+    - Je cherche le prix d'un billet de [Diamniadio](Ticket_depart) à [Dakar Plateau](Ticket_arrive).
+    - Pouvez-vous me donner le tarif entre [Colobane](Ticket_depart) et [Hann](Ticket_arrive) ?
+    - Combien coûte un billet de [Dalifort](Ticket_depart) à [Baux Maraichers](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [Pikine](Ticket_depart) et [Thiaroye](Ticket_arrive).
+    - Pouvez-vous me dire combien coûte un ticket de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive) ?
+    - Quel est le prix d'un billet de [PNR](Ticket_depart) à [Rufisque](Ticket_arrive) ?
+    - Combien pour un ticket de [Rufisque](Ticket_depart) à [Diamniadio](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [Bargny](Ticket_depart) et [Dakar Plateau](Ticket_arrive).
+    - Pouvez-vous me donner le prix d'un billet de [HLM Grand Yoff](Ticket_depart) à [Marché Sandaga](Ticket_arrive) ?
+    - Combien coûte un billet de [Colobane](Ticket_depart) à [Hann](Ticket_arrive) ?
+    - Quel est le tarif entre [Dalifort](Ticket_depart) et [Baux Maraichers](Ticket_arrive) ?
+    - Je veux connaître le tarif entre [PNR](Ticket_depart) et [Rufisque](Ticket_arrive).
+    - Pouvez-vous me donner le prix d'un billet de [Rufisque](Ticket_depart) à [Diamniadio](Ticket_arrive) ?
+    - Pouvez-vous me dire le prix d'un billet de [Colobane](Ticket_depart) à [Hann](Ticket_arrive) ?
+    - Combien pour un ticket de [Dalifort](Ticket_depart) à [Baux Maraichers](Ticket_arrive) ?
+    - Pouvez-vous me donner le prix d'un billet de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive) ?
+    - Combien coûte un ticket de [PNR](Ticket_depart) à [Rufisque](Ticket_arrive) ?
+    - Je cherche le prix d'un billet de [Bargny](Ticket_depart) à [Dakar Plateau](Ticket_arrive).
+    - Pouvez-vous me donner le tarif entre [HLM Grand Yoff](Ticket_depart) et [Colobane](Ticket_arrive) ?
+    - Combien coûte un billet de [Marché Sandaga](Ticket_depart) à [Hann](Ticket_arrive) ?
+    - Quel est le tarif entre [Baux Maraichers](Ticket_depart) et [Pikine](Ticket_arrive) ?
+    - Je veux connaître le prix d'un billet de [Thiaroye](Ticket_depart) à [Yeumbeul](Ticket_arrive).
+    - Pouvez-vous me dire combien coûte un ticket de [Keur Mbaye Fall](Ticket_depart) à [PNR](Ticket_arrive) ?
+    - Combien pour un billet de [Rufisque](Ticket_depart) à [Bargny](Ticket_arrive) ?
+    - Quel est le tarif entre [Diamniadio](Ticket_depart) et [Dakar Plateau](Ticket_arrive) ?
+    - Pouvez-vous me donner le prix d'un billet de [Colobane](Ticket_depart) à [Dalifort](Ticket_arrive) ?
+    - Combien coûte un billet de [Hann](Ticket_depart) à [Baux Maraichers](Ticket_arrive) ?
+    - Je veux connaître le prix d'un billet de [Pikine](Ticket_depart) à [Thiaroye](Ticket_arrive).
+    - Pouvez-vous me donner le tarif entre [HLM Grand Yoff](Ticket_depart) et [Marché Sandaga](Ticket_arrive) ?
+    - Pouvez-vous me dire combien coûte un billet de [Yeumbeul](Ticket_depart) à [Keur Mbaye Fall](Ticket_arrive) ?
+    - Pouvez-vous me donner le prix d'un billet de [HLM Grand Yoff](Ticket_depart) à [Colobane](Ticket_arrive) ?
+    - Pouvez-vous me dire combien coûte un billet de [Keur Mbaye Fall](Ticket_depart) à [PNR](Ticket_arrive) ?
+    - Quel est le tarif entre [Almadies](Ticket_depart) et [Arafat](Ticket_arrive) ?
+    - Combien coûte le billet de [Baobabs](Ticket_depart) à [Biscuiterie](Ticket_arrive) ?
+    - Prix du ticket de [Amitié](Ticket_depart) à [Cité Millionnaire](Ticket_arrive).
+    - Tarification entre [Cité Sonatel](Ticket_depart) et [Colobane](Ticket_arrive) ?
+    - Billet entre [Corniche](Ticket_depart) et [Cours Sainte Marie de Hann](Ticket_arrive).
+    - Combien payer de [Dieuppeul](Ticket_depart) à [Fass](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Fith Mith](Ticket_depart) à [Gueule Tapée](Ticket_arrive) ?
+    - Tarification du billet entre [Grand Dakar](Ticket_depart) et [Guinaw Rail Nord](Ticket_arrive).
+    - Prix du ticket de [Hann Bel-Air](Ticket_depart) à [Hann Maristes](Ticket_arrive).
+    - Quel est le tarif entre [Hann Plage](Ticket_depart) et [HLM](Ticket_arrive) ?
+    - Combien coûte le billet de [HLM 1](Ticket_depart) à [HLM Grand Yoff](Ticket_arrive) ?
+    - Tarification entre [HLM Parcelles Assainies](Ticket_depart) et [HLM Patte d’Oie](Ticket_arrive).
+    - Billet entre [HLM Rufisque](Ticket_depart) et [Ile de Gorée](Ticket_arrive).
+    - Combien payer de [Keur Massar](Ticket_depart) à [Liberté](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Maristes](Ticket_depart) à [Mamelles](Ticket_arrive) ?
+    - Tarification du billet entre [Mbao](Ticket_depart) et [Médina Gounass](Ticket_arrive).
+    - Prix du ticket de [Mermoz](Ticket_depart) à [Sacré Cœur](Ticket_arrive).
+    - Quel est le tarif entre [Mermoz Pyrotechnie](Ticket_depart) et [Mermoz Nord](Ticket_arrive) ?
+    - Combien coûte le billet de [Ngor](Ticket_depart) à [Nord Foire](Ticket_arrive) ?
+    - Tarification entre [Ouakam](Ticket_depart) et [Parcelles Assainies](Ticket_arrive).
+    - Billet entre [Patte d'Oie](Ticket_depart) et [Pikine](Ticket_arrive).
+    - Combien payer de [Point E](Ticket_depart) à [Sangalkam](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Sebikotane](Ticket_depart) à [Sicap Foire](Ticket_arrive) ?
+    - Tarification du billet entre [Khar Yalla](Ticket_depart) et [Ouest Foire](Ticket_arrive).
+    - Prix du ticket de [Sud Foire](Ticket_depart) à [Diamalaye](Ticket_arrive).
+    - Quel est le tarif entre [Djily Mbaye](Ticket_depart) et [Parcelles](Ticket_arrive) ?
+    - Combien coûte le billet de [Yeumbeul](Ticket_depart) à [Guédiawaye](Ticket_arrive) ?
+    - Tarification entre [Sicap Liberté](Ticket_depart) et [Sicap Mbao](Ticket_arrive).
+    - Billet entre [Tally Bou Bess](Ticket_depart) et [Thiaroye](Ticket_arrive).
+    - Combien payer de [Thiaroye Gare](Ticket_depart) à [Thiaroye sur Mer](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Virage](Ticket_depart) à [Yoff](Ticket_arrive) ?
+    - Tarification du billet entre [Yoff Layène](Ticket_depart) et [Yarakh](Ticket_arrive).
+    - Prix du ticket de [Dakar-Plateau](Ticket_depart) à [Medina Gounass](Ticket_arrive).
+    - Quel est le tarif entre [Ngor](Ticket_depart) et [Ouakam](Ticket_arrive) ?
+    - Combien coûte le billet de [Point E](Ticket_depart) à [Sicap Foire](Ticket_arrive) ?
+    - Billet entre [Sicap Sacré Cœur](Ticket_depart) et [Tivaouane Peulh](Ticket_arrive).
+    - Combien payer de [Yoff Layène](Ticket_depart) à [Yarakh](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Rufisque Nord](Ticket_depart) à [Rufisque Est](Ticket_arrive) ?
+    - Tarification du billet entre [Rufisque Ouest](Ticket_depart) et [Bargny](Ticket_arrive).
+    - Prix du ticket de [Sendou](Ticket_depart) à [Yène](Ticket_arrive).
+    - Quel est le tarif entre [Diamniadio](Ticket_depart) et [Sebikotane](Ticket_arrive) ?
+    - Combien coûte le billet de [Bambilor](Ticket_depart) à [Sangalkam](Ticket_arrive) ?
+    - Tarification entre [Liberte 6](Ticket_depart) et [Liberte 5](Ticket_arrive).
+    - Billet entre [Liberte 4](Ticket_depart) et [Liberte 3](Ticket_arrive).
+    - Combien payer de [Liberte 2](Ticket_depart) à [Liberte 1](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Golf Sud](Ticket_depart) à [Sam Notaire](Ticket_arrive) ?
+    - Tarification du billet entre [Wakhinane Nimzatt](Ticket_depart) et [Yeumbeul Nord](Ticket_arrive).
+    - Prix du ticket de [Yeumbeul Sud](Ticket_depart) à [Malika](Ticket_arrive).
+    - Quel est le tarif entre [Keur Massar Nord](Ticket_depart) et [Keur Massar](Ticket_arrive) ?
+    - Combien coûte le billet de [Jaxaay-Parcelles](Ticket_depart) à [Keur Massar Sud](Ticket_arrive) ?
+    - Tarification entre [Place de l'Indépendance](Ticket_depart) et [Marché Sandaga](Ticket_arrive).
+    - Billet entre [Île de Gorée](Ticket_depart) et [Mosquée de la Divinité](Ticket_arrive).
+    - Combien payer de [Monument de la Renaissance Africaine](Ticket_depart) à [Musée Théodore Monod d'Art Africain](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Parc de Hann](Ticket_depart) à [Marché HLM](Ticket_arrive) ?
+    - Tarification du billet entre [Cathédrale du Souvenir Africain](Ticket_depart) et [Parc zoologique de Hann](Ticket_arrive).
+    - Prix du ticket de [Grande Mosquée de Dakar](Ticket_depart) à [Plage de Yoff](Ticket_arrive).
+    - Quel est le tarif entre [Port de Dakar](Ticket_depart) et [Parc forestier et zoologique de Hann](Ticket_arrive) ?
+    - Combien coûte le billet de [Institut français de Dakar](Ticket_depart) à [Jardin botanique de Dakar](Ticket_arrive) ?
+    - Tarification entre [Lac Rose](Ticket_depart) et [Marché Kermel](Ticket_arrive).
+    - Billet entre [Stade Léopold Sédar Senghor](Ticket_depart) et [Aquarium de Dakar](Ticket_arrive).
+    - Combien payer de [Musée des civilisations noires](Ticket_depart) à [Tivaouane Peulh](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Almadies](Ticket_depart) à [Arafat](Ticket_arrive) ?
+    - Tarification du billet entre [Baobabs](Ticket_depart) et [Biscuiterie](Ticket_arrive).
+    - Quel est le tarif entre [Cité Sonatel](Ticket_depart) et [Colobane](Ticket_arrive) ?
+    - Combien coûte le billet de [Corniche](Ticket_depart) à [Cours Sainte Marie de Hann](Ticket_arrive) ?
+    - Tarification entre [Dieuppeul](Ticket_depart) et [Fass](Ticket_arrive).
+    - Billet entre [Fith Mith](Ticket_depart) et [Gueule Tapée](Ticket_arrive).
+    - Combien payer de [Grand Dakar](Ticket_depart) à [Guinaw Rail Nord](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Hann Bel-Air](Ticket_depart) à [Hann Maristes](Ticket_arrive) ?
+    - Tarification du billet entre [Hann Plage](Ticket_depart) et [HLM](Ticket_arrive).
+    - Prix du ticket de [HLM 1](Ticket_depart) à [HLM Grand Yoff](Ticket_arrive).
+    - Quel est le tarif entre [HLM Parcelles Assainies](Ticket_depart) et [HLM Patte d’Oie](Ticket_arrive) ?
+    - Combien coûte le billet de [HLM Rufisque](Ticket_depart) à [Ile de Gorée](Ticket_arrive) ?
+    - Tarification entre [Keur Massar](Ticket_depart) et [Liberté](Ticket_arrive).
+    - Billet entre [Maristes](Ticket_depart) et [Mamelles](Ticket_arrive).
+    - Combien payer de [Mbao](Ticket_depart) à [Médina Gounass](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Mermoz](Ticket_depart) à [Sacré Cœur](Ticket_arrive) ?
+    - Tarification du billet entre [Mermoz Pyrotechnie](Ticket_depart) et [Mermoz Nord](Ticket_arrive).
+    - Prix du ticket de [Ngor](Ticket_depart) à [Nord Foire](Ticket_arrive).
+    - Quel est le tarif entre [Ouakam](Ticket_depart) et [Parcelles Assainies](Ticket_arrive) ?
+    - Combien coûte le billet de [Patte d'Oie](Ticket_depart) à [Pikine](Ticket_arrive) ?
+    - Tarification entre [Point E](Ticket_depart) et [Sangalkam](Ticket_arrive).
+    - Billet entre [Sebikotane](Ticket_depart) et [Sicap Foire](Ticket_arrive).
+    - Combien payer de [Khar Yalla](Ticket_depart) à [Ouest Foire](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Sud Foire](Ticket_depart) à [Diamalaye](Ticket_arrive) ?
+    - Tarification du billet entre [Djily Mbaye](Ticket_depart) et [Parcelles](Ticket_arrive).
+    - Prix du ticket de [Yeumbeul](Ticket_depart) à [Guédiawaye](Ticket_arrive).
+    - Quel est le tarif entre [Sicap Liberté](Ticket_depart) et [Sicap Mbao](Ticket_arrive) ?
+    - Combien coûte le billet de [Tally Bou Bess](Ticket_depart) à [Thiaroye](Ticket_arrive) ?
+    - Tarification entre [Thiaroye Gare](Ticket_depart) et [Thiaroye sur Mer](Ticket_arrive).
+    - Billet entre [Virage](Ticket_depart) et [Yoff](Ticket_arrive).
+    - Quel est le coût du ticket de [Dakar-Plateau](Ticket_depart) à [Medina Gounass](Ticket_arrive) ?
+    - Tarification du billet entre [Ngor](Ticket_depart) et [Ouakam](Ticket_arrive).
+    - Prix du ticket de [Point E](Ticket_depart) à [Sicap Foire](Ticket_arrive).
+    - Combien coûte le billet de [Sicap Sacré Cœur](Ticket_depart) à [Tivaouane Peulh](Ticket_arrive) ?
+    - Tarification entre [Yoff Layène](Ticket_depart) et [Yarakh](Ticket_arrive).
+    - Billet entre [Rufisque Nord](Ticket_depart) et [Rufisque Est](Ticket_arrive).
+    - Combien payer de [Rufisque Ouest](Ticket_depart) à [Bargny](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Sendou](Ticket_depart) à [Yène](Ticket_arrive) ?
+    - Tarification du billet entre [Diamniadio](Ticket_depart) et [Sebikotane](Ticket_arrive).
+    - Prix du ticket de [Bambilor](Ticket_depart) à [Sangalkam](Ticket_arrive).
+    - Quel est le tarif entre [Liberte 6](Ticket_depart) et [Liberte 5](Ticket_arrive) ?
+    - Combien coûte le billet de [Liberte 4](Ticket_depart) à [Liberte 3](Ticket_arrive) ?
+    - Tarification entre [Liberte 2](Ticket_depart) et [Liberte 1](Ticket_arrive).
+    - Billet entre [Golf Sud](Ticket_depart) et [Sam Notaire](Ticket_arrive).
+    - Combien payer de [Wakhinane Nimzatt](Ticket_depart) à [Yeumbeul Nord](Ticket_arrive) ?
+    - Quel est le coût du ticket de [Yeumbeul Sud](Ticket_depart) à [Malika](Ticket_arrive) ?
+    - Tarification du billet entre [Keur Massar Nord](Ticket_depart) et [Keur Massar](Ticket_arrive).
+    - quelle billet prendre de [hlm](Ticket_depart) grznd [yoff](Ticket_depart) a [sandaga](Ticket_arrive)
+    - quelle billet prendre de [mermoz](Ticket_depart) a [ouakam](Ticket_arrive)
+    - quelle ticket acheter si je quitte [hlm grand yoff](Ticket_depart) pour aller a [sandaga](Ticket_arrive)
+    - quelle ticket acheter si je quitte [colobane](Ticket_depart) pour aller a [diamniadio](Ticket_arrive)

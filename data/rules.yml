@@ -1,0 +1,78 @@
+version: "3.1"
+
+rules:
+  - rule: random stuff
+    steps:
+      - intent: random
+      - action: utter_default
+  - rule: Say hello
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Actionner la fourniture de la localisation user
+    steps:
+      - intent: fournir_localisation
+
+  - rule: fournir la station la plus proche de la localisation du user
+    steps:
+      - intent: ask_nearest_station
+      - action: action_provide_nearest_station
+
+  - rule: Actionner la fourniture de la station la plus proche par lieu
+    steps:
+      - intent: fournir_lieux
+      - action: lieu_form
+      - active_loop: lieu_form
+
+  - rule: Fournir la station la plus proche du lieu donné
+    condition:
+      - active_loop: lieu_form
+    steps:
+      - action: lieu_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_provide_nearest_station_by_lieu
+
+  - rule: Demander les horaires
+    steps:
+      - intent: train_horaire_lieuDepart_lieuArrive
+      - action: utter_demande_horaire
+      - active_loop: horaire_heure_form
+
+  - rule: Fournir heure de l'horaire
+    condition:
+      - active_loop: horaire_heure_form
+    steps:
+      - action: horaire_heure_form
+      - active_loop: null
+      - action: action_provide_train_schedule
+
+  - rule: Provide description
+    steps:
+      - intent: ask_description
+      - action: utter_description
+  - rule: Remerciment
+    steps:
+      - intent: Merci
+      - action: utter_remerciment
+
+  - rule: message pas compris par le bot
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+  - rule: Demande train le plus proche
+    steps:
+      - intent: next_train_horaire
+      - action: action_next_train
+  - rule: Demande train le plus proche
+    steps:
+      - intent: tarif_entre_gare
+      - action: action_tarif_entre_gare
