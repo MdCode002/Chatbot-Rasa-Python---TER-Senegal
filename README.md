@@ -99,7 +99,7 @@ Les forms sont des structures qui permettent de collecter systématiquement des 
    git clone https://github.com/votre-username/ter-ia-chatbot.git
    cd ter-ia-chatbot
    ```
-  ```
+  
 
 4. **Entraînement du modèle** :
    ```
