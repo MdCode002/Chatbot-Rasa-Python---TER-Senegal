@@ -97,7 +97,7 @@ Les forms sont des structures qui permettent de collecter systématiquement des 
 
    ```
    git clone https://github.com/MdCode002/Chatbot-Rasa-Python---TER-Senegal
-   cd ter-ia-chatbot
+   
    ```
   
 
